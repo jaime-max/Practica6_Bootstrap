@@ -1,0 +1,11 @@
+.media-left img{
+   border: silver 5px solid;
+   border-image-slice: 5;
+   text-align: justify;
+}
+.list-unstyled{
+    margin: 60px 150px 130px 150px;
+}
+.lista{
+    margin: 30px 50px 0px 50px;
+}

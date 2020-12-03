@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/dce97ec0a3.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <button class="navbar-toggler navbar-toggler-rigth" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/1.jpg" width="40" height="40" class="d-inline-block align-top" alt="Inicio">
+                Inicio
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="navbar-nav mr-auto ml-auto text-center">
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" data-toggle="modal" data-target="#mymodel" href="#">Login</a>
+                <a class="nav-item nav-link" data-toggle="modal" data-target="#mymodel1" href="#">Registrarse</a>
+                <a class="nav-item nav-link " href="administrador_u.html">consultas</a>
+            </div>
+            </div>
+      
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container ">
+            <h1 class="display-4">DASW</h1>
+            <p class="lead">Crear una interface web para registro de usuarios</p>
+            <hr class="my-4">
+            <p>login</p>
+            <P>Registro</P>
+            <p>Consultas</p>
+            <P class="lead">
+                <a href="administrador_u.html" class="btn btn-primary btn-lg">Ir a Consultas</a>
+            </P>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="mymodel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-black">Login</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <h5>Correo</h5>
+                                <div class="input-group">
+                                    <div class="input-group prepend">
+                                        <div class="input-group-text">
+                                            <i class="fas fa-user fa-1x"></i>
+                                        </div>
+                                            <input type="text" name="" class="form-control" placeholder="correo registrado">
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="form-group">
+                                <h5>Password</h5>
+                                <div class="input-group">
+                                    <div class="input-group prepend">
+                                        <div class="input-group-text">
+                                            <i class="fas fa-key"></i>
+                                        </div>
+                                        <input type="text" name="" class="form-control" placeholder="password registrado">
+                                    </div>
+                                </div>
+                            </div><br>
+                        </form>
+                        <div>
+                            <a href="#" class="btn btn-outline-success mr-1">Login</a>
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <div class="modal-header">
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-ligth mt-1">
+                                <p>No tienes cuenta! <a data-dismiss="modal" href="#" class="blue-text" data-toggle="modal" data-target="#mymodel1">Registrate aqui</a></p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="mymodel1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-black">Registrar Usuario</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <input type="text" class="form-control" id="email" placeholder="Nombre o nombres" name="email">
+                              </div>
+                              <div class="col-md-6">
+                                <input type="password" class="form-control" placeholder="Apellidos" name="pswd">
+                              </div>
+                            </div><br>
+                            <div class="row-md-4">
+                                  <input type="text" class="form-control" id="email" placeholder="Tu correo" name="email">
+                            </div><br>
+                            <div class="row-md-4">
+                                <input type="text" class="form-control" id="email" placeholder="contraseña" name="email">
+                            </div><br>
+                            <div class="row-md-4">
+                                <input type="text" class="form-control" id="email" placeholder="cofirmar contraseña" name="email">
+                            </div><br>
+                            <div class="row-md-4">
+                            <input type="text" class="form-control" id="email" placeholder="DD/MM/AA" name="email">
+                            </div><br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  Mujer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  Hombre
+                                </label>
+                            </div><br>
+                            <div class="row-md-4">
+                                <input type="text" class="form-control" id="email" placeholder="Url de imagen de perfil" name="email">
+                            </div>
+                        </form><br>
+                        <div>
+                            <a href="index.html" class="btn btn-outline-success mr-1">Registrarse</a>
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
